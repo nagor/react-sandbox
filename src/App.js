@@ -10,6 +10,7 @@ import { Greeting } from './components/greeting';
 import { WarningBanner } from './components/warning-banner';
 import { NumberList } from './components/numbers-list';
 import { NumberList as NumberListItems } from './components/numbers-list-items';
+import NameForm from './components/name-form';
 import './App.css';
 
 class App extends Component {
@@ -91,6 +92,12 @@ class App extends Component {
                     <NumberListItems numbers={[5, 3, 4, 6, 1, 7]} />
                   </td>
                   <td>Using keys on repeated items on proper place</td>
+                </tr>
+                <tr>
+                  <td>
+                    <NameForm />
+                  </td>
+                  <td>Using simple Form to make input uppercased</td>
                 </tr>
               </tbody>
             </table>

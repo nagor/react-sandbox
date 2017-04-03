@@ -12,6 +12,8 @@ import { NumberList } from './components/numbers-list';
 import { NumberList as NumberListItems } from './components/numbers-list-items';
 import NameForm from './components/name-form';
 import Calculator from './components/temperature-calculator';
+import SignUpDialog from './components/composition-dialog';
+import { PaneLeftRight } from './components/composition-custom';
 import './App.css';
 
 class App extends Component {
@@ -105,6 +107,18 @@ class App extends Component {
                     <Calculator />
                   </td>
                   <td>Example of shared state between two child components in parent. Used Lifting State Up approach</td>
+                </tr>
+                <tr>
+                  <td>
+                    <SignUpDialog />
+                  </td>
+                  <td>Example of using composition with nested components</td>
+                </tr>
+                <tr>
+                  <td>
+                    <PaneLeftRight />
+                  </td>
+                  <td>Example of using composition with not standart props.children but rather custom props.left and props.right</td>
                 </tr>
               </tbody>
             </table>

@@ -11,6 +11,7 @@ import { WarningBanner } from './components/warning-banner';
 import { NumberList } from './components/numbers-list';
 import { NumberList as NumberListItems } from './components/numbers-list-items';
 import NameForm from './components/name-form';
+import Calculator from './components/temperature-calculator';
 import './App.css';
 
 class App extends Component {
@@ -98,6 +99,12 @@ class App extends Component {
                     <NameForm />
                   </td>
                   <td>Using simple Form to make input uppercased</td>
+                </tr>
+                <tr>
+                  <td>
+                    <Calculator />
+                  </td>
+                  <td>Example of shared state between two child components in parent. Used Lifting State Up approach</td>
                 </tr>
               </tbody>
             </table>

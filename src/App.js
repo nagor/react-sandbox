@@ -14,6 +14,7 @@ import NameForm from './components/name-form';
 import Calculator from './components/temperature-calculator';
 import SignUpDialog from './components/composition-dialog';
 import { PaneLeftRight } from './components/composition-custom';
+import { FilterableProductTableWrapper } from './components/products-table';
 import './App.css';
 
 class App extends Component {
@@ -119,6 +120,12 @@ class App extends Component {
                     <PaneLeftRight />
                   </td>
                   <td>Example of using composition with not standart props.children but rather custom props.left and props.right</td>
+                </tr>
+                <tr>
+                  <td>
+                    <FilterableProductTableWrapper />
+                  </td>
+                  <td>Full Example of 3 components: table(parent), search, list (children), interactivity and shared state</td>
                 </tr>
               </tbody>
             </table>

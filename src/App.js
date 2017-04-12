@@ -15,6 +15,8 @@ import Calculator from './components/temperature-calculator';
 import SignUpDialog from './components/composition-dialog';
 import { PaneLeftRight } from './components/composition-custom';
 import { FilterableProductTableWrapper } from './components/products-table';
+import TextBoxWithCounter from './components/text-box';
+import Radio from './components/radio';
 import './App.css';
 
 class App extends Component {
@@ -126,6 +128,18 @@ class App extends Component {
                     <FilterableProductTableWrapper />
                   </td>
                   <td>Full Example of 3 components: table(parent), search, list (children), interactivity and shared state</td>
+                </tr>
+                <tr>
+                  <td>
+                    <TextBoxWithCounter />
+                  </td>
+                  <td>TextBoxWithCounter example with onInput event handling</td>
+                </tr>
+                <tr>
+                  <td>
+                    <Radio />
+                  </td>
+                  <td>Radio control example</td>
                 </tr>
               </tbody>
             </table>

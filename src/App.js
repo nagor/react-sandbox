@@ -19,6 +19,7 @@ import TextBoxWithCounter from './components/text-box';
 import Radio from './components/radio';
 import SignInModal from './components/auto-focus.jsx';
 import SearchSuggestions from './components/almost-components.jsx';
+import PagePrice from './components/price-formatting.jsx';
 import './App.css';
 
 class App extends Component {
@@ -154,6 +155,12 @@ class App extends Component {
                     <SearchSuggestions listItems={[{ id: 1, name: "Terry" }, { id: 2, name: "Perry" }]} />
                   </td>
                   <td>Example of component with internal "almost-component"</td>
+                </tr>
+                <tr>
+                  <td>
+                    <PagePrice />
+                  </td>
+                  <td>Example of string formatting</td>
                 </tr>
               </tbody>
             </table>

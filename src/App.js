@@ -83,7 +83,7 @@ class App extends Component {
                 </tr>
                 <tr>
                   <td>
-                    <WarningBanner warn={'Be careful!'} />
+                    <WarningBanner warn={'Be careful!'} makeYellow={false}/>
                   </td>
                   <td>WarningBanner being passed a message. It is displayed</td>
                 </tr>

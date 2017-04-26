@@ -7,7 +7,7 @@ import Toggle from './components/toggle';
 import SomeAliasForLoginControl from './components/login-control';
 import { Mailbox } from './components/mailbox';
 import { Greeting } from './components/greeting';
-import { WarningBanner } from './components/warning-banner';
+import { WarningBanner } from './components/warning-banner.jsx';
 import { NumberList } from './components/numbers-list';
 import { NumberList as NumberListItems } from './components/numbers-list-items';
 import NameForm from './components/name-form';
@@ -17,6 +17,8 @@ import { PaneLeftRight } from './components/composition-custom';
 import { FilterableProductTableWrapper } from './components/products-table';
 import TextBoxWithCounter from './components/text-box';
 import Radio from './components/radio';
+import SignInModal from './components/auto-focus.jsx';
+import SearchSuggestions from './components/almost-components.jsx';
 import './App.css';
 
 class App extends Component {
@@ -140,6 +142,18 @@ class App extends Component {
                     <Radio />
                   </td>
                   <td>Radio control example</td>
+                </tr>
+                <tr>
+                  <td>
+                    <SignInModal />
+                  </td>
+                  <td>Example of component with auto-focus and references to internal components</td>
+                </tr>
+                <tr>
+                  <td>
+                    <SearchSuggestions listItems={[{ id: 1, name: "Terry" }, { id: 2, name: "Perry" }]} />
+                  </td>
+                  <td>Example of component with internal "almost-component"</td>
                 </tr>
               </tbody>
             </table>
